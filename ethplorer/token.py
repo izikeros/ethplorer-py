@@ -3,11 +3,11 @@ from .client import Client
 
 class Token(Client):
 
-    TOKEN_INFO = '/getTokenInfo/'
-    TOKEN_HISTORY = '/getTokenHistory/'
-    TOP_TOKENS = '/getTopTokens'
+    TOKEN_INFO = "/getTokenInfo/"
+    TOKEN_HISTORY = "/getTokenHistory/"
+    TOP_TOKENS = "/getTopTokens"
 
-    def __init__(self, address=''):
+    def __init__(self, address=""):
         Client.__init__(self)
         self.address = address
 
@@ -22,4 +22,3 @@ class Token(Client):
     def get_top_tokens(self):
         self.build_url(self.TOP_TOKENS)
         return self.connect()
-        

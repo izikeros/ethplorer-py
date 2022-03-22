@@ -2,11 +2,11 @@ from .client import Client
 
 
 class Address(Client):
-    ADDRESS_INFO = '/getAddressInfo/'
-    ADDRESS_HISTORY = '/getAddressHistory/'
-    ADDRESS_TRANSACTIONS = '/getAddressTransactions/'
+    ADDRESS_INFO = "/getAddressInfo/"
+    ADDRESS_HISTORY = "/getAddressHistory/"
+    ADDRESS_TRANSACTIONS = "/getAddressTransactions/"
 
-    def __init__(self, address=''):
+    def __init__(self, address=""):
         Client.__init__(self)
         self.address = address
 

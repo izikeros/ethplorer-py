@@ -6,6 +6,6 @@ python:
 install:
   - pip install -q requests
   - python setup.py install
-  
-script: 
+
+script:
   - python ./test/tests.py

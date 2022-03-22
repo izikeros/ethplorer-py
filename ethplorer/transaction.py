@@ -3,9 +3,9 @@ from .client import Client
 
 class Transaction(Client):
 
-    TX_INFO = '/getTxInfo/'
+    TX_INFO = "/getTxInfo/"
 
-    def __init__(self, hash=''):
+    def __init__(self, hash=""):
         Client.__init__(self)
         self.hash = hash
 
