@@ -7,6 +7,7 @@ class Client:
 
     def __init__(self, url=""):
         self.http_client = requests.session()
+        self.url = None
 
     def connect(self):
         try:
